@@ -1,24 +1,23 @@
 {
-  "name": "grunt-scss-to-json",
-  "description": "A grunt plugin that uses scss-to-json and writes the JSON to the file system.",
+  "name": "grunt-scss-json",
+  "description": "A grunt plugin that uses scss-json and writes the JSON to the file system.",
   "version": "1.0.1",
-  "homepage": "https://github.com/ryanbahniuk/grunt-scss-to-json",
+  "homepage": "https://github.com/claicham/grunt-scss-to-json",
   "author": {
-    "name": "Ryan Bahniuk",
-    "email": "ryan.bahniuk@gmail.com",
-    "url": "http://bahni.uk"
+    "name": "Claire Chambers",
+    "email": "claire.chambers@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ryanbahniuk/grunt-scss-to-json.git"
+    "url": "git://github.com/claicham/grunt-scss-to-json.git"
   },
   "bugs": {
-    "url": "https://github.com/ryanbahniuk/grunt-scss-to-json/issues"
+    "url": "https://github.com/claicham/grunt-scss-to-json/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/ryanbahniuk/grunt-scss-to-json/blob/master/LICENSE-MIT"
+      "url": "https://github.com/claicham/grunt-scss-to-json/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {
@@ -42,6 +41,6 @@
     "json"
   ],
   "dependencies": {
-    "scss-to-json": "^1.0.1"
+    "scss-json": "^1.0.0"
   }
 }
