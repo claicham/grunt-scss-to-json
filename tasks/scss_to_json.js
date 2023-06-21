@@ -8,20 +8,20 @@
 
 'use strict';
 
-var scssToJson = require('scss-to-json');
+var scssToJson = require('scss-json');
 
 function allFilesExist(grunt, mainPath, options) {
   var allPaths = [mainPath];
 
   if (options && options.dependencies) {
-    var dependencyPaths = options.dependencies.map(function(dependency) {
+    var dependencyPaths = options.dependencies.map(function (dependency) {
       return dependency.path;
     });
 
     allPaths = allPaths.concat(dependencyPaths);
   }
 
-  return allPaths.every(function(path) {
+  return allPaths.every(function (path) {
     if (grunt.file.exists(path)) {
       return true;
     } else {
@@ -31,8 +31,8 @@ function allFilesExist(grunt, mainPath, options) {
   });
 }
 
-module.exports = function(grunt) {
-  grunt.registerMultiTask('scss_to_json', 'A grunt plugin that uses scss-to-json and writes the JSON to the file system.', function() {
+module.exports = function (grunt) {
+  grunt.registerMultiTask('scss_to_json', 'A grunt plugin that uses scss-to-json and writes the JSON to the file system.', function () {
     if (this.filesSrc.length > 1) {
       grunt.fail.warn('Src must match only one file.');
     }
